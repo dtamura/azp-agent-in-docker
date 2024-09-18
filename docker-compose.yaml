@@ -1,0 +1,10 @@
+services:
+  azp-agent:
+    build: .
+    environment:
+      - AZP_URL=
+      - AZP_TOKEN=
+      - AZP_POOL=Default # Default
+      - AZP_AGENT_NAME=Docker Agent - Linux
+    restart: unless-stopped
+
